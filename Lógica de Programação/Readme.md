@@ -1,0 +1,3 @@
+# Lógica de Programação com JavaScript
+
+A intenção dessa pasta é de, simplesmente, me auxiliar a entender melhor a sintaxe usada em JavaScript, quais são suas funções nativas mais usadas, etc. Além disso, pretendo também me inteirar tanto quanto ao uso de JS diretamente no navegador usando HTML, quanto ao seu uso com NodeJs no terminal. Já tenho uma boa noção de lógica de programação e, portanto, tenho certa tranquilidade com a parte "cognitiva" do que está sendo implementado aqui, meu desafio é a sintaxe.
