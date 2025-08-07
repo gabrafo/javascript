@@ -19,14 +19,14 @@ var pessoa = { // Objeto literal que herda de Object.prototype
     apelido: 'Gabrafo',
 
     // Métodos
-    estudar: function(){
+    estudar: () => { // Arrow function
         console.log("Zzzzzz... Estou estudando..... Zzzzz...");
     },
 
-    apresentar: function(){
+    apresentar: function(){ // Função normal (expressão)
         console.log("Meu nome é " + this.nome + " " + this.sobrenome +
         ".\nNo entanto, você pode me chamar de " + this.apelido + ".");
-    },
+    }, // ← trailing comma (vírgula no último item do objeto)
 }
 
 console.log('Objeto "pessoa":')
@@ -52,6 +52,7 @@ console.log("-----")
 // Checando herança (cadeia de protótipos):
 console.log('Protótipo de pessoa:', Object.getPrototypeOf(pessoa));
 console.log('Protótipo de Object.prototype:', Object.getPrototypeOf(Object.prototype));
+// Não tem prototype acima do Object.prototype, porque ele é o fim da cadeia.
 
 // Fluxo de busca de uma propriedade (ex.: toString):
 // pessoa.toString -> não existe em pessoa -> procura em Object.prototype -> encontra -> executa.
@@ -61,4 +62,5 @@ console.log("-----")
 // Criar objetos sem essa herança padrão:
 const objetoPuro = Object.create(null);
 console.log('objetoPuro.toString:', objetoPuro.toString); // undefined
-// Aqui, o protótipo é null, então não há busca acima de criado.
+// Aqui, o protótipo é null, então não há um objeto pai, e, portanto, não achamos o toString.
+
