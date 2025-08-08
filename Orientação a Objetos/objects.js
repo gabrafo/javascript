@@ -29,6 +29,8 @@ var pessoa = { // Objeto literal que herda de Object.prototype
     }, // ← trailing comma (vírgula no último item do objeto)
 }
 
+console.log('"pessoa".toString:', pessoa.toString); // Busca em Object.prototype
+
 console.log('Objeto "pessoa":')
 console.log(pessoa)
 
@@ -59,8 +61,28 @@ console.log('Protótipo de Object.prototype:', Object.getPrototypeOf(Object.prot
 
 console.log("-----")
 
-// Criar objetos sem essa herança padrão:
+// Criando objetos com construtores:
+const objetoComConstrutor = new Object();
+console.log('objetoComConstrutor.toString:', objetoComConstrutor.toString);
+
+console.log("-----")
+
+// Criar objetos sem herança padrão:
 const objetoPuro = Object.create(null);
 console.log('objetoPuro.toString:', objetoPuro.toString); // undefined
-// Aqui, o protótipo é null, então não há um objeto pai, e, portanto, não achamos o toString.
+// Aqui, o protótipo é null e não temos um método toString explicitamente definido, 
+// Então, como também não há um objeto pai, não achamos o toString.
 
+console.log("-----")
+
+// Criando objetos com protótipo e configurações de propriedades/métodos:
+const objetoComProtoEConfig = Object.create(pessoa, {
+    nome: {
+        value: 'Gabriel',
+        writable: true,
+        enumerable: true,
+        configurable: true
+    }
+})
+
+console.log('objetoComProtoEConfig.toString:', objetoComProtoEConfig.toString);
