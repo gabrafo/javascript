@@ -9,3 +9,51 @@ a:hover {
 a:active {
   color: green;
 }
+
+/* Seleciona todas as tags p que estão dentro do h2 */
+h2 p {
+  color: blue;
+}
+
+/* Seleciona todas as tags h1 e h2 */
+h1, h2 {
+  text-align: center;
+}
+
+ul { 
+  text-align: center;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.buttonNavigateToIndex {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Seleciona o botão com o ID "buttonIndexLuffy" */
+/* Não podemos utilizar um mesmo ID em diferentes elementos, pois o ID é único. */
+#buttonIndexLuffy:hover {
+  background-color: black;
+}
+
+#buttonIndexSanji {
+  background-color: blue; /* Sobrepõe o background-color: red; do .buttonNavigateToIndex */
+}
+
+#buttonIndexSanji:hover {
+  background-color: black;
+}
+
+#buttonSanjiRecipe {
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
