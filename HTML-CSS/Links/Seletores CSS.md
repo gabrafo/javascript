@@ -5,10 +5,6 @@ A `class` (classe) é a nossa ferramenta para aplicar um mesmo conjunto de estil
 * **Sintaxe no CSS:** `.` (ponto)
 * **Sintaxe no HTML:** `class="..."`
 
-Juntando tudo o que conversamos, aqui está um resumo que consolida essas ideias, focando no que é essencial para o dia a dia e para um código de qualidade.
-
----
-
 ## IDs vs. Classes em CSS
 
 Tanto IDs quanto Classes servem para selecionar elementos HTML, mas cada um tem um propósito claro. Entender quando usar cada um é a chave para um código CSS organizado, eficiente e acessível.
