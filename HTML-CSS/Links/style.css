@@ -35,6 +35,13 @@ ul {
   cursor: pointer;
 }
 
+.haki {
+  color: red;
+}
+
+.hakiDoRei {
+  font-style: italic;
+}
 
 /* Seleciona o botão com o ID "buttonIndexLuffy" */
 /* Não podemos utilizar um mesmo ID em diferentes elementos, pois o ID é único. */
