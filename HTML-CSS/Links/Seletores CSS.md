@@ -66,3 +66,8 @@ p                { color: gray; } /* Perde para ambos. 🥉 */
 ```
 
 O texto será **vermelho**, pois a regra do ID é a mais forte.
+
+### Recomendação de conteúdo para estudo
+- https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_selectors
+- https://www.w3schools.com/css/css_selectors.asp
+- https://www.youtube.com/watch?v=1Rs2ND1ryYc
