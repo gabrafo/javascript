@@ -1,0 +1,20 @@
+p.hoje {
+  color: darkred;
+}
+
+p.amanha {
+  color: darkblue;
+}
+
+* {
+  text-decoration: none;
+  font-family: Arial;
+}
+
+h2.a {
+  color: seagreen;
+}
+
+p {
+  font-size: 20px;
+}
