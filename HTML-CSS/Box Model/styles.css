@@ -1,0 +1,26 @@
+div {
+  background: #aaa;
+  width: 140px;
+  height: 80px;
+  padding: 20px;
+  border: 10px solid #000;
+  margin: 30px;
+}
+
+body {
+  margin: 0px;
+}
+
+h1 {
+  background: #8ae;
+  font-size: 24px;
+  padding: 10px;
+  width: 100px;
+  border: 10px solid #000;
+  margin: 40px; /* Colide com a margin de div e vence! Portanto, a margin entre h1 e div é de 40 px. */
+}
+
+/* 
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Introduction_to_the_CSS_box_model 
+*/
