@@ -1,0 +1,18 @@
+html {
+  font-size: 14px;
+}
+
+div {
+  font-size: 40px;
+}
+
+.use-em {
+  font-size: 1em; /* Se baseia no font-size do pai (40px) */
+}
+
+.use-rem {
+  font-size: 1rem; /* Se baseia no font-size da raiz (html, 14px) */
+}
+
+/* Pixel é uma unidade absoluta. em e rem são unidades relativas à fonte
+de determinado elemento (seu pai, ou o elemento raiz, a.k.a html). */
