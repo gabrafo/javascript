@@ -14,5 +14,18 @@ div {
   font-size: 1rem; /* Se baseia no font-size da raiz (html, 14px) */
 }
 
+.use-percentage {
+  font-size: 50%; /* Se baseia no elemento pai, portanto seriam 50% de 40px = 20px */
+}
+
 /* Pixel é uma unidade absoluta. em e rem são unidades relativas à fonte
 de determinado elemento (seu pai, ou o elemento raiz, a.k.a html). */
+
+/* em = relativo ao font-size do pai */
+/* ✅ Escala com o elemento pai, ótimo para tipografia aninhada */
+/* ✅ Mantém proporções de padding/margin dentro de componentes */
+
+/* rem = relativo ao font-size da raiz (html) */
+/* ✅ Escala de forma consistente em todo o site */
+/* ✅ Facilita alterar o tamanho base global do layout */
+/* ✅ Bom para acessibilidade: responde a zoom e ajustes de fonte do navegador */
