@@ -36,6 +36,10 @@ div {
   font-size: 50%; /* Se baseia no elemento pai, portanto seriam 50% de 40px = 20px */
 }
 
+.vmax {
+  font-size: 2vmax; /* Usa 1% da maior dimensão do viewport. Exemplo: em 1000x500 ele usaria 1% de 1000, ou seja, 10px. Como pedimos 2vmax, vai ser 20px. existe também a unidade vmin (viewport minimum), que funciona de maneira oposta, usando 1% da menor dimensão do viewport*/
+}
+
 /* Pixel é uma unidade absoluta. em e rem são unidades relativas à fonte
 de determinado elemento (seu pai, ou o elemento raiz, a.k.a html). */
 
