@@ -1,9 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 html {
   font-size: 14px;
+  scroll-behavior: smooth; 
 }
 
 div {
   font-size: 40px;
+}
+
+.use-viewport-units{
+  background-color:yellow;
+  width: 100vw; /* Usa 100% do viewport width (100% da largura total visível da tela) */
+  height: 100vh; /* Usa 100% do viewport height (100% da altura total visível da tela). Geralmente usamos vh para quando queremos fazer páginas com seções que ocupam a altura de uma tela toda! */
+}
+
+.second-page {
+  background-color: cadetblue;
+  width: 100vw;
+  height: 100vh;
 }
 
 .use-em {
@@ -22,10 +40,10 @@ div {
 de determinado elemento (seu pai, ou o elemento raiz, a.k.a html). */
 
 /* em = relativo ao font-size do pai */
-/* ✅ Escala com o elemento pai, ótimo para tipografia aninhada */
-/* ✅ Mantém proporções de padding/margin dentro de componentes */
+/* Escala com o elemento pai, ótimo para tipografia aninhada */
+/* Mantém proporções de padding/margin dentro de componentes */
 
 /* rem = relativo ao font-size da raiz (html) */
-/* ✅ Escala de forma consistente em todo o site */
-/* ✅ Facilita alterar o tamanho base global do layout */
-/* ✅ Bom para acessibilidade: responde a zoom e ajustes de fonte do navegador */
+/* Escala de forma consistente em todo o site */
+/* Facilita alterar o tamanho base global do layout */
+/* Bom para acessibilidade: responde a zoom e ajustes de fonte do navegador */

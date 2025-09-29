@@ -2,12 +2,17 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Width=device-width define a largura da viewport para ser igual à largura da tela do dispositivo em pixels de CSS. Isso garante que o site ocupe toda a largura disponível, adaptando-se a diferentes tamanhos de tela-->
+  <!--Initial-scale de 1.0 significa que não haverá zoom, e a página será exibida em sua escala original-->
+
   <link rel="stylesheet" href="styles.css">
   <title>Unidades de medida</title>
 </head>
 <body>
-  <div>
+  <div class="use-viewport-units" id="one">
+    <a href="#second">Rolar página</a> <!--Link âncora-->
     <p class="use-em">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eum dolore voluptas quisquam aperiam iste, natus fugiat sed consequuntur voluptatum eius voluptatem assumenda quis vitae beatae optio porro, quia asperiores.
     </p>
@@ -21,5 +26,9 @@
     </p>
   </div>
   
+  <div class="second-page" id="second">
+    <a href="#one">Subir página</a> <!--Link âncora-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus numquam saepe eos at ipsa, deleniti dolorum, hic cum possimus omnis ullam facilis necessitatibus nemo, non quae. Magni, maxime dolore?</p>
+  </div>
 </body>
 </html>
