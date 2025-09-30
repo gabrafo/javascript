@@ -14,6 +14,19 @@ body div {
 }
 */
 
-body div, body section { /* Combinadores de seletor descendente com uso de vírgula para fazer aplicar as mesmas regras para mais de uma seleção */
+body div div p, body div section p { /* Combinadores de seletor descendente com uso de vírgula para fazer aplicar as mesmas regras para mais de uma seleção */
   background-color: blueviolet;
+}
+
+.header-2 { /* Seletor de classe */
+  color: blue;
+}
+
+#special-div { /* Seletor de ID */
+  border: 2px solid red;
+}
+
+#special-div p { /* Seletor de ID + combinador de seletor descendente */
+  background-color: yellow;
+  color: red;
 }
