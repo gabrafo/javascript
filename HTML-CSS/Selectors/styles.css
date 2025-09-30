@@ -1,0 +1,19 @@
+* {  /* Seletor universal */
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 { /* Seletor de tag */
+  color: red;
+}
+
+/* 
+Combinador de seletor descendente. Seleciona elementos descendentes de outro elemento
+body div {
+  background-color: blueviolet;
+}
+*/
+
+body div, body section { /* Combinadores de seletor descendente com uso de vírgula para fazer aplicar as mesmas regras para mais de uma seleção */
+  background-color: blueviolet;
+}
