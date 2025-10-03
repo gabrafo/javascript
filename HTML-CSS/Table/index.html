@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela</title>
+  <style>
+    table td, table th {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    table {
+      border-collapse: collapse; /*Une as bordas da tabela*/
+    }
+
+    thead {
+      background-color: #ddd;
+    }
+
+    tfoot td {
+      font-style: italic;
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Descrição da tabela</caption>
+    <thead>
+      <tr>
+        <th>Título 1</th> <!--Título da coluna-->
+        <th>Título 2</th>
+        <th>Título 3</th>
+      </tr> <!--Linhas-->
+    </thead> <!--Cabeçalho-->
+    <tbody> <!--Corpo da tabela-->
+      <tr>
+        <td colspan="2">DUAS COLUNAS</td>
+        <td>Corpo 3</td>
+      </tr>
+      <tr>
+        <td>Corpo 1</td>
+        <td>Corpo 2</td>
+        <td>Corpo 3</td>
+      </tr>
+      <tr>
+        <td>Corpo 1</td>
+        <td>Corpo 2</td>
+        <td>Corpo 3</td>
+      </tr>
+    </tbody>
+    <tfoot> <!--Footer da tabela-->
+      <tr>
+        <td>Corpo 1</td>
+        <td>Corpo 2</td>
+        <td>Corpo 3</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
