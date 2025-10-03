@@ -12,6 +12,8 @@
 
     table {
       border-collapse: collapse; /*Une as bordas da tabela*/
+      width: 100vw;
+      height: 100vh;
     }
 
     thead {
@@ -22,39 +24,46 @@
       font-style: italic;
       background-color: #ddd;
     }
+
+    div {
+      overflow-x: auto;
+      overflow-y: auto;
+    }
   </style>
 </head>
 <body>
-  <table>
-    <caption>Descrição da tabela</caption>
-    <thead>
-      <tr>
-        <th>Título 1</th> <!--Título da coluna-->
-        <th>Título 2</th>
-        <th>Título 3</th>
-      </tr> <!--Linhas-->
-    </thead> <!--Cabeçalho-->
-    <tbody> <!--Corpo da tabela-->
-      <tr>
-        <td colspan="2" rowspan="2">DUAS COLUNAS e LINHAS</td>
-        <td>Corpo 3</td>
-      </tr>
-      <tr>
-        <td>Corpo 3</td>
-      </tr>
-      <tr>
-        <td>Corpo 1</td>
-        <td>Corpo 2</td>
-        <td>Corpo 3</td>
-      </tr>
-    </tbody>
-    <tfoot> <!--Footer da tabela-->
-      <tr>
-        <td>Corpo 1</td>
-        <td>Corpo 2</td>
-        <td>Corpo 3</td>
-      </tr>
-    </tfoot>
-  </table>
+  <div>
+    <table>
+      <caption>Descrição da tabela</caption>
+      <thead>
+        <tr>
+          <th>Título 1</th> <!--Título da coluna-->
+          <th>Título 2</th>
+          <th>Título 3</th>
+        </tr> <!--Linhas-->
+      </thead> <!--Cabeçalho-->
+      <tbody> <!--Corpo da tabela-->
+        <tr>
+          <td colspan="2" rowspan="2">DUAS COLUNAS e LINHAS</td>
+          <td>Corpo 3</td>
+        </tr>
+        <tr>
+          <td>Corpo 3</td>
+        </tr>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+      </tbody>
+      <tfoot> <!--Footer da tabela-->
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
 </body>
 </html>
