@@ -18,7 +18,12 @@ body div div p, body div section p { /* Combinadores de seletor descendente com 
   background-color: blueviolet;
 }
 
-.header-2 { /* Seletor de classe */
+.header-2 {
+  border: 2px solid black;
+  color: red;
+}
+
+h2.header-2 { /* Seletor de classe + seletor de tag. Seleciona todos os h2 da classe header-2 */
   color: blue;
 }
 
