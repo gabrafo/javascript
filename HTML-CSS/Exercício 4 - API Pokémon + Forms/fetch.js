@@ -15,7 +15,7 @@ document.getElementById("pokeForm").addEventListener("submit", async event => {
         <img src="${data.sprites.front_default}" alt="${data.name}">
       `;
     } catch (err) {
-      document.getElementById("result").textContent = "Erro!" + err.message;
+      document.getElementById("result").textContent = "Erro! " + err.message;
     }
   }
 });
