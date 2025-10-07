@@ -1,6 +1,7 @@
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr); /* Mesma coisa de 1fr 1fr */
+  grid-template-rows: 200px auto 50px auto; /* Tamanho das linhas */
   gap: 20px;
   place-items: start end; /* Elementos maiores sempre definem o alinhamento dos menores, visto que são eles quem fazem espaço sobrar */
 }
