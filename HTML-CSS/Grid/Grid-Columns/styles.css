@@ -2,6 +2,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  place-items: start end; /* Elementos maiores sempre definem o alinhamento dos menores, visto que são eles quem fazem espaço sobrar */
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.preco {
+  place-self: center;
+}
+
+.comprar {
+  place-self: center;
 }
 
 .foto {
@@ -27,7 +41,6 @@ body {
 
 h1, p {
   margin: 0px;
-  font-size: 48px;
   line-height: 1;
 }
 
