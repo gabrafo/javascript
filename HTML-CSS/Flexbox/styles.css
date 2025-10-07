@@ -1,0 +1,26 @@
+#flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Não estoura o container, tenta criar novas linhas até não dar mais */
+  justify-content: space-around;
+  align-content: start;
+  /*
+  place-content é uma junção de justify e align 
+  */
+  height: 100vh;
+}
+
+body {
+  margin: 0px;
+}
+
+h2 {
+  background-color: #e7e7e7;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 0px;
+  flex-grow: 1;
+  /* flex-basis é o tamanho mínimo de cada item */
+  /* flex-shrink determina se o elemento pode ser diminuído ou não */
+  /* flex apenas é um atalho pras 3 propriedades */
+}
