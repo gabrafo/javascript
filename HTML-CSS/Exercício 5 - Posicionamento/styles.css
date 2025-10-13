@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: grid;
+  place-items: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap; /* Quebra itens responsivamente */
+  gap: 20px;
+  justify-content: center; /* Alinha os itens quebrados ao centro */
+}
+
+nav a {
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 75vw;
+}
+
+#first-section {
+  background-color: #fff;
+  padding: 40px;
+  text-align: right;
+  position: relative;
+  display: grid;
+  place-items: end;
+}
+
+#detail {
+  width: 60px;
+  height: 4px;
+  background-color: #ee2211;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+#nimbus-button {
+  background-color: #ee2211;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+#advantages {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+}
+
+#list dl {
+  padding: 80px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-flow: row dense; /* Isso faz o navegador tentar preencher todos os “buracos” do grid causados por itens maiores que ocupam múltiplas células. */
+  row-gap: 10px;
+}
+
+#list dl dt img {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+#list dt {
+  grid-column: 1/-1;
+}
+
+#list dd {
+  grid-column: 1/-1;
+  margin-left: 50px;
+}
+
+footer {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}

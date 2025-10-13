@@ -16,4 +16,12 @@ p {
   top: 0px; /* Só funciona com elementos com position definida, tal qual left, right e bottom */
   right: 20px;
   left: 20px;
+  z-index: -1; /* Fica atrás de todos os elementos da tela */
 }
+
+/*
+position: relative
+Se baseia em onde o elemento está na tela
+
+Para que um elemento possa se basear na div pai para encontrar seu lugar na tela, usamos position: relative na div pai e position: absolute na filha
+*/
