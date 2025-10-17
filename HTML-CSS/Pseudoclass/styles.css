@@ -43,7 +43,7 @@ button:active {
   color: blue;
 }
 
-/* Usei dois seletores, nth-child e not (que nega o estilo em um filho específico) */
+/* Usei dois seletores, nth-child e not (que nega o estilo em um filho específico). Dá pra usar classe/id em not também! */
 .lista-2 li:nth-child(even):not(:last-child) { /* Podemos usar even, 3n, etc */
   background-color: aqua;
   color: blue;
