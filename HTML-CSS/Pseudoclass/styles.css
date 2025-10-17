@@ -1,0 +1,50 @@
+button {
+  background-color: #caf;
+  padding: 20px;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+/* Pseudoclasses de estado */
+
+button:hover {
+  background-color: #adf;
+  cursor: pointer;
+}
+
+button:focus {
+  background-color: black;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+}
+
+/* Tem o visited também! */
+
+/* Pseudoclasses de seleção */
+
+.lista-1 li:first-child { /* Pega apenas o primeiro li */ 
+  background: #caf;
+  color: blue;
+}
+
+.lista-1 li:last-child {
+  background: #cfa;
+  color: blue;
+}
+
+.lista-1 li:nth-child(3) {
+  background-color: bisque;
+  color: blue;
+}
+
+/* Usei dois seletores, nth-child e not (que nega o estilo em um filho específico) */
+.lista-2 li:nth-child(even):not(:last-child) { /* Podemos usar even, 3n, etc */
+  background-color: aqua;
+  color: blue;
+}
