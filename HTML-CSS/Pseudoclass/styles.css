@@ -48,3 +48,26 @@ button:active {
   background-color: aqua;
   color: blue;
 }
+
+/* Pseudoelementos */
+
+h1::before {
+  content: "Olá, "; /* Adiciona conteúdo antes do elemento */
+}
+
+h1::after {
+  content: " Fagundes Mesquita Sousa";
+}
+
+li::before {
+  content: "";
+  display: inline-block;
+  width: 0.1rem;
+  height: 0.1rem;
+  border: #caf 5px solid;
+  margin: 3px;
+}
+
+h1::first-letter {
+  color: red;
+}
