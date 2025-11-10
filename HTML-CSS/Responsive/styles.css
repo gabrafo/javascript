@@ -1,0 +1,46 @@
+img {
+  max-width: 100%; /* Cresce de acordo com o tamanho do elemento pai */
+  display: block;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colunas por padrão */
+  gap: 2rem;
+}
+
+div h1 {
+  grid-column: 1 / -1; /* Pega todas as colunas */ 
+}
+
+/* abaixo de 600px */
+@media (max-width: 600px) {
+  div {
+    grid-template-columns: 1fr; /* Deixa apenas 1 coluna ao invés de 2 */
+    gap: 1rem;
+  }
+
+  h1 {
+    background: lightcoral;
+  }
+}
+
+/* acima de 1000px */
+@media (min-width: 1000px) {
+  html {
+    font-size: 150%;  /* Aumenta a fonte em 50%, por isso é importante usar rem, que muda de acordo com font-size */
+  }
+
+  h1 {
+    background: lightblue;
+  }
+}
+
+/* entre 800px e 900px */
+@media (min-width: 800px) and (max-width: 900px) {
+  h1 {
+    background: lightgreen;
+  }
+}
+
+/* media screen só aplica efeitos na tela, não na impressão, o contrário vale p/ media print */
