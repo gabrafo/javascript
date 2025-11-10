@@ -1,0 +1,24 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.cover img {
+  height: 100%;
+  object-fit: cover; /* Corta a imagem pra que ela caiba no container */
+  object-position: top center; /* Corta na direita/esquerda mantendo a imagem centralizada */
+}
+
+.texto {
+  align-self: center;
+}
+
+p {
+  font-size: 2rem;
+}
