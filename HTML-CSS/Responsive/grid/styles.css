@@ -1,0 +1,20 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cria colunas de no mínimo 300px e divide o espaço restante igualmente (1fr). O auto-fit faz o grid se ajustar automaticamente ao tamanho da tela. */
+  gap: 1rem;
+}
+
+.galeria {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+@media (min-width: 400px) {
+  div p {
+    order: -1;
+  }
+}
