@@ -7,6 +7,10 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto; /* Sempre centraliza na tela */
+  /* Poderia ser margin: 0 auto; */
 }
 
 .cover img {
@@ -17,6 +21,7 @@ img {
 
 .texto {
   align-self: center;
+  max-width: 75ch; /* Tamanho máximo das linhas de texto, cada ch é o tamanho de um caractere "0" da tipografia */
 }
 
 p {
